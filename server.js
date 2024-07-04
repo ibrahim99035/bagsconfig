@@ -54,7 +54,7 @@ app.get('/data', (req, res) => {
 
 // Route to get the current configuration
 app.get('/get-config', (req, res) => {
-    fs.readFile('./public/config.json', 'utf8', (err, data) => {
+    fs.readFile('./public/JSON/config.json', 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ error: 'Unable to read configuration file' });
         }
@@ -65,7 +65,7 @@ app.get('/get-config', (req, res) => {
 // Route to update the configuration
 app.post('/update-config', (req, res) => {
     const updatedConfig = req.body;
-    fs.writeFile('./public/config.json', JSON.stringify(updatedConfig, null, 2), 'utf8', (err) => {
+    fs.writeFile('./public/JSON/config.json', JSON.stringify(updatedConfig, null, 2), 'utf8', (err) => {
         if (err) {
             return res.status(500).json({ error: 'Unable to update configuration file' });
         }
