@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Your Website Title</title>
+  <style>
+    /* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, main, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    width: 60%;
+    padding: 1rem;
+  }
+  
+  /* Header Styles */
+  .logo {
+    flex-grow: 0;
+  }
+  
+  .navigation-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation-links li {
+    margin-right: 1rem;
+  }
+  
+  .navigation-links a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  /* Main Content Styles */
+  .video-container {
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  .social-media, .contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media a {
+    margin-right: 1rem;
+    color: #000;
+  }
+  
+  .social-media i {
+    font-size: 1.5rem;
+  }
+  
+  </style>
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"> Your Logo
+      </div>
+      <ul class="navigation-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search-bar">
+        <form action="#">
+          <input type="text" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <aside class="sidebar left">
+        <h2>Navigation</h2>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ol>
+      </aside>
+
+      <section class="main-content">
+        <h2>Main Content</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin semper libero vel enim porttitor tincidunt. Sed posuere consectetur est at lobortis. Donec eu libero sit amet quam egestas semper. Aenean euismod bibendum laoreet. Proin semper libero vel enim porttitor tincidunt. Sed posuere consectetur est at lobortis.</p>
+      </section>
+
+      <aside class="sidebar right">
+        <article>
+          <h2>Section 1</h2>
+          <img src="image1.jpg" alt="Image Description 1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h2>Section 2</h2>
+          <img src="image2.jpg" alt="Image Description 2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="#"><i class="fas fa-facebook-f"></i></a>
+      <a href="#"><i class="fas fa-twitter"></i></a>
+      <a href="#"><i class="fas fa-instagram"></i></a>
+    </div>
+    <div class="contact">
+      <p>Contact: +123 456 7890</p>
+    </div>
+  </footer>
+</body>
+</html>

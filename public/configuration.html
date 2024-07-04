@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Configuration</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <a href="/"><i class="fa fa-wpforms" aria-hidden="true" title="Home"></i></a>
+        <i class="fa fa-file-excel-o" aria-hidden="true" title="Download Excel" id="download-excel"></i>
+        <a href="/config"><i class="fa fa-cog" aria-hidden="true" title="Configrations"></i></a>
+        <a href="/data"><i class="fa fa-database" aria-hidden="true" title="Show Samples"></i></a>
+    </div>
+
+    <div>
+        <h1>Update Configuration</h1>
+        <form id="configForm">
+            <fieldset>
+                <legend>Fabric</legend>
+                <label for="weight_per_sqm">Weight per sqm:</label>
+                <input type="number" id="weight_per_sqm" name="fabric.weight_per_sqm" step="any"><br>
+                <label for="cost_per_gram">Cost per gram:</label>
+                <input type="number" id="cost_per_gram" name="fabric.cost_per_gram" step="any"><br>
+                <label for="selling_price_per_gram">Selling price per gram:</label>
+                <input type="number" id="selling_price_per_gram" name="fabric.selling_price_per_gram" step="any">
+            </fieldset>
+
+            <fieldset>
+                <legend>Coloring</legend>
+                <label for="coloring_price">Price:</label>
+                <input type="number" id="coloring_price" name="coloring.price" step="any">
+            </fieldset>
+
+            <fieldset>
+                <legend>Printing Methods</legend>
+                <label for="none">None:</label>
+                <input type="number" id="none" name="printing.methods.none" step="any"><br>
+                <label for="one_sided">1 Sided:</label>
+                <input type="number" id="one_sided" name="printing.methods.1_sided" step="any"><br>
+                <label for="two_sided">2 Sided:</label>
+                <input type="number" id="two_sided" name="printing.methods.2_sided" step="any">
+            </fieldset>
+
+            <fieldset>
+                <legend>Hand Attachments</legend>
+                <label for="none_hand_attachment">None:</label>
+                <input type="number" id="none_hand_attachment" name="hand_attachments.none" step="any"><br>
+                <label for="pockets">Pockets:</label>
+                <input type="number" id="pockets" name="hand_attachments.pockets" step="any"><br>
+                <label for="zippers">Zippers:</label>
+                <input type="number" id="zippers" name="hand_attachments.zippers" step="any"><br>
+                <label for="embroidery">Embroidery:</label>
+                <input type="number" id="embroidery" name="hand_attachments.embroidery" step="any">
+            </fieldset>
+
+            <fieldset>
+                <legend>Tax</legend>
+                <label for="tax">Tax:</label>
+                <input type="number" id="tax" name="tax" step="any">
+            </fieldset>
+
+            <button type="submit">Update Configuration</button>
+        </form>
+    </div>  
+    <script src="JS/engine.js"></script>
+    <script src="JS/excel.js"></script>
+</body>
+</html>

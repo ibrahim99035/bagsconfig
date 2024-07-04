@@ -1,0 +1,24 @@
+{
+  "fabric": {
+    "weight_per_sqm": 0.7,
+    "cost_per_gram": 0.2,
+    "selling_price_per_gram": 0.5
+  },
+  "coloring": {
+    "price": 0.1
+  },
+  "printing": {
+    "methods": {
+      "none": 0,
+      "1 sided": 1,
+      "2 sided": 2
+    }
+  },
+  "hand_attachments": {
+    "none": 0,
+    "pockets": 1.5,
+    "zippers": 2,
+    "embroidery": 3
+  },
+  "tax": 0.1
+}
